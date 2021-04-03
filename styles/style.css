@@ -6,7 +6,7 @@
   --zwart: #000;
   --wit: #fff;
   --donkergrijs: #333333;
-  --lightgrijs: #f5f5f5;
+  --lichtgrijs: #f5f5f5;
   --grijs: #ccc;
 }
 * {
@@ -101,9 +101,10 @@ section ul {
   height: 640px;
   display: flex;
   align-items: center;
-}
+  justify-content: space-between;
+} /*SECTION LEFT*/
 section ul li:nth-of-type(1) {
-  width: 515px;
+  width: 520px;
   height: 396px;
   color: var(--wit);
   margin: 50px 0px;
@@ -115,7 +116,7 @@ section ul li:nth-of-type(1) {
 }
 section ul li:nth-of-type(1) h1 {
   font-family: Raleway;
-  font-style: bold;
+  font-weight: 600;
   font-size: 36px;
   line-height: 44px;
 }
@@ -136,4 +137,61 @@ section ul li:nth-of-type(1) a {
 }
 section ul li:nth-of-type(1) a:hover {
   color: var(--oranje);
+}
+section ul li h3 {
+  width: 64px;
+  border-bottom: solid 2px;
+}
+/*SECTION RIGHT*/
+section ul li:nth-of-type(2) {
+  width: 360px;
+  height: 360px;
+  color: var(--wit);
+  margin: 50px 0px;
+  background-color: var(--wit);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+section ul li:nth-of-type(2) h2 {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--donkergrijs);
+  background-color: var(--lichtgrijs);
+  text-align: center;
+  padding: 24px;
+  width: 360px;
+  height: 55px;
+}
+section ul li:nth-of-type(2) form {
+  box-sizing: border-box;
+  padding: 0px 40px;
+}
+section ul li:nth-of-type(2) form input {
+  display: flex;
+  flex-direction: column;
+  font-family: Open Sans;
+  font-size: 14px;
+  padding: 20px 14px;
+  outline: none;
+  border: none;
+  width: 280px;
+  border-bottom: solid 1px var(--grijs);
+}
+section ul li:nth-of-type(2) form input::placeholder {
+  color: var(--grijs);
+}
+section ul li:nth-of-type(2) a {
+  color: var(--wit);
+  text-decoration: none;
+  background-color: var(--oranje);
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  padding: 24px;
+  width: 360px;
+  height: 55px;
 }
