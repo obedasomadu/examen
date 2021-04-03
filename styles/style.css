@@ -1,5 +1,6 @@
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('../icons/style.css');
 :root {
   --oranje: #ff9b51;
   --zwart: #000;
@@ -8,7 +9,7 @@
   --lightgrijs: #f5f5f5;
   --grijs: #ccc;
 }
-body{
+body {
   display: flex;
   justify-content: center;
 }
@@ -16,34 +17,74 @@ body main {
   width: 1400px;
   height: 814px;
   background-color: var(--grijs);
-  background-image: url(/+assets/images/banner_background.jpg);µ
+  background-image: url(/+assets/images/banner_background.jpg);
   object-fit: contain;
 }
-/*Navigation*/
-nav{
-  background-color:var(--zwart);
+/*navigation*/
+nav {
+  background-color: var(--zwart);
   display: flex;
   justify-content: center;
 }
- 
-nav ul{
+
+nav ul {
   display: flex;
   flex-direction: row;
-justify-content: space-between;
-width: 1100px;
+  justify-content: space-between;
+  width: 1100px;
 }
-nav ul li{
-  padding:30px 15px;
+nav ul li {
+  padding: 30px 15px;
 }
-nav ul li:nth-of-type(1){
+nav ul li:nth-of-type(1) {
   margin: 0 auto 0 0;
 }
-nav ul li a{
+nav ul li a {
   color: var(--wit);
   text-decoration: none;
-  font-family:Open Sans;
+  font-family: Open Sans;
   font-size: 14px;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   color: var(--oranje);
+}
+/*footer*/
+footer {
+  height: 102px;
+  background-color: var(--wit);
+  display: flex;
+  justify-content: center;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1100px;
+}
+footer ul li:nth-of-type(1) {
+  margin: 0 auto 0 0;
+}
+footer ul li {
+  padding: 30px 15px;
+  font-size: 30px;
+}
+footer ul li a {
+  font-size: 40px;
+  text-decoration: none;
+  color: var(--grijs);
+}
+footer ul li a:hover {
+  color: var(--zwart);
+}
+footer ul li p:nth-of-type(1) {
+  font-family: Open Sans;
+  font-style: bold;
+  font-size: 20px;
+}
+footer ul li p:nth-of-type(2) {
+  font-family: Open Sans;
+  font-style: regular;
+  font-size: 14px;
+  color: var(--grijs);
+  line-height: 24px;
 }
